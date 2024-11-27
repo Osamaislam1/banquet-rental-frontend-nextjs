@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --coral: #E88D7C;
+  --sage: #94B5A9;
+  --cream: #FDF6F2;
+  --text-dark: #2D2D2D;
+  --background: var(--cream);
+}
+
+@font-face {
+  font-family: 'Marcellus';
+  src: url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text-dark);
+  font-family: 'Marcellus', serif;
+}
+
+.search-input {
+  @apply w-full px-6 py-3 rounded-full border-2 border-sage/20 focus:border-sage 
+  focus:outline-none text-lg transition-all duration-300;
+}
+
+.btn-primary {
+  @apply px-8 py-3 rounded-full text-white font-medium transition-all duration-300
+  bg-coral hover:bg-coral/90 focus:ring-2 focus:ring-coral/50;
+}
+
+.btn-secondary {
+  @apply px-8 py-3 rounded-full text-white font-medium transition-all duration-300
+  bg-sage hover:bg-sage/90 focus:ring-2 focus:ring-sage/50;
+}
+
+.feature-icon {
+  @apply w-16 h-16 rounded-full flex items-center justify-center
+  bg-coral/10 text-coral transition-transform duration-300 hover:scale-110;
+}
+
+.gallery-item {
+  @apply relative overflow-hidden rounded-lg transition-all duration-300
+  hover:shadow-xl cursor-pointer;
+}
+
+.gallery-item img {
+  @apply transition-transform duration-500 hover:scale-105;
+}
+
+.stats-card {
+  @apply bg-white/80 backdrop-blur-sm p-6 rounded-xl text-center;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.3s ease-out forwards;
+}
