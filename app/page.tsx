@@ -19,13 +19,13 @@ export default function Home() {
         {/* Hero Section */}
         <section className="relative px-6 py-20 text-center">
           <FlowerPattern />
-          <div className="max-w-4xl mx-auto relative">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold mb-6">
+          <div className="max-w-3xl mx-auto relative">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold mb-6">
               Find the Perfect Banquet
               <br />
               for Your Celebration
             </h1>
-            <p className="text-xl text-gray-600 mb-12">
+            <p className="text-lg text-gray-600 mb-12">
               Enter the perfect details for your special occasion
             </p>
             <SearchBar />

@@ -12,7 +12,7 @@ export default function SearchBar() {
   };
 
   return (
-    <div className="w-full max-w-2xl mx-auto space-y-6">
+    <div className="w-full max-w-sm mx-auto space-y-6">
       <form onSubmit={handleSearch} className="relative">
         <input
           type="text"
